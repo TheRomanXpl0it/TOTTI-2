@@ -1,0 +1,27 @@
+log_level: "info"
+log_file: "sub.log"
+
+team: 9
+number_of_teams: 43
+team_token: "AAAA" # Remember to edit the team token
+
+training: true # Remember to edit for the finals
+
+team_format: "10.60.%d.1"
+
+round_duration: 120
+flag_alive: 5
+flag_format: "[A-Z0-9]{31}="
+
+flagid_url: "http://10.10.0.1:8081/flagIds"
+
+
+sub_protocol: "ccit-new"
+start_round: "2025-07-16T22:36+02" # "Y-m-d H:M +UTC"
+rounds: 100
+sub_limit: 1
+sub_interval: 20
+sub_max_payload_size: 5000
+sub_url: "http://10.10.0.1:8080/flags"
+
+database: "database.db"

@@ -1,0 +1,22 @@
+services:
+
+  submitter:
+    build: ./
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+
+########## DEV ##########
+
+    volumes:
+      - vol:/app/
+
+volumes:
+  vol:
+    driver: local
+    driver_opts:
+      type: none
+      device: ./vol
+      o: bind
+
+########## DEV ##########

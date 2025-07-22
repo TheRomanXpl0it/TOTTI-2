@@ -1,0 +1,7 @@
+*.db
+sub
+
+Dockerfile.dev
+dev.sh
+dev.bat
+compose.dev.yml
